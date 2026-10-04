@@ -88,13 +88,13 @@ with onglet1:
     with st.form("formulaire_simple"):
         col1, col2 = st.columns(2)
         with col1:
-            kms_driven = st.number_input("Kilométrage (Kms_Driven)", value=0.0, step=1000.0, format="%.2f")
-            present_price = st.number_input("Prix neuf (Present_Price, en lakhs)", value=0.0, step=0.5, format="%.2f")
+            kms_driven = st.number_input("Kilométrage (Kms_Driven)", value=71822.0, step=1000.0, format="%.2f")
+            present_price = st.number_input("Prix neuf (Present_Price, en lakhs)", value=15.38, step=0.5, format="%.2f")
             fuel_type = st.selectbox("Type de carburant", options=list(uniques[0]))
         with col2:
             seller_type = st.selectbox("Type de vendeur", options=list(uniques[1]))
             transmission = st.selectbox("Transmission", options=list(uniques[2]))
-            age = st.number_input("Âge du véhicule (années)", value=0.0, step=1.0, format="%.2f")
+            age = st.number_input("Âge du véhicule (années)", value=8.0, step=1.0, format="%.2f")
 
         soumettre = st.form_submit_button("Prédire", type="primary")
 

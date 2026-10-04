@@ -62,9 +62,9 @@ préparation des données :
 7. Évaluation (R², MSE, MAE) et sélection du meilleur modèle, exporté avec
    `joblib` dans `models/`.
 
-Le modèle actuellement déployé a été entraîné avec un script équivalent
-(même démarche que le notebook) : Random Forest a été retenu avec un
-**R² ≈ 0,94** sur le jeu de test.
+Le modèle actuellement déployé a été entraîné directement avec ce notebook :
+Random Forest a été retenu avec un **R² ≈ 0,88** sur les données de
+validation.
 
 ## Jeu de données
 
